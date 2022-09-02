@@ -65,7 +65,6 @@ export const getNoteById = (id) => {
     return undefined;
   } else {
     const note = notes.filter((note) => note.id === id)[0];
-    console.log(note);
     return note;
   }
 };
