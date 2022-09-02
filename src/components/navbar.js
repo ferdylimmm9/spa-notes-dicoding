@@ -4,9 +4,9 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <nav>
-        <Link to="/">List</Link>
-        <Link to="/add">Add</Link>
-        <Link to="/search">Search</Link>
+        <Link to="/">Daftar</Link>
+        <Link to="/add">Tambah</Link>
+        <Link to="/search">Cari</Link>
       </nav>
     );
   }
