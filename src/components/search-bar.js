@@ -26,9 +26,10 @@ class SearchBar extends React.Component {
         >
           <input
             type="text"
+            placeholder="Cari judul catatan..."
             onChange={(event) => this.setState({ title: event.target.value })}
           />
-          <input type="submit" value="search" />
+          <input type="submit" value="Cari" />
         </form>
       </>
     );

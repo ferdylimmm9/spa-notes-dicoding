@@ -62,9 +62,11 @@ export const getNotesByTitle = (title) => {
 
 export const getNoteById = (id) => {
   if (!id) {
-    return notes;
+    return undefined;
   } else {
-    return notes.filter((note) => note.id === id)[0];
+    const note = notes.filter((note) => note.id === id)[0];
+    console.log(note);
+    return note;
   }
 };
 
