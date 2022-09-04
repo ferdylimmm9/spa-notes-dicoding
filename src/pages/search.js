@@ -1,7 +1,7 @@
 import * as React from "react";
 import SearchBarWrapper from "../components/search-bar";
 import { useSearchParams } from "react-router-dom";
-import { getNotesByTitle } from "../utils/notes";
+import { getNotesByTitle } from "../utils/index";
 import NoteCard from "../components/note-card";
 export default function SearchPage() {
   const [params] = useSearchParams();

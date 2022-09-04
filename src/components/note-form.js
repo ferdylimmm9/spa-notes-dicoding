@@ -1,5 +1,5 @@
 import * as React from "react";
-import { addNote } from "../utils/notes";
+import { addNote } from "../utils/index";
 import SweetAlert from "sweetalert2";
 export default class NoteForm extends React.Component {
   constructor(props) {

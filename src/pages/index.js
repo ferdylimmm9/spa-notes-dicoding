@@ -1,12 +1,12 @@
 import * as React from "react";
 import NoteCard from "../components/note-card";
-import { deleteNote, getNotesByTitle, toggleNote } from "../utils/notes";
+import { deleteNote, getNotesByTitle, toggleNote } from "../utils/index";
 
 export default class Homepage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      archived: true,
+      archived: false,
       notes: getNotesByTitle(),
     };
     this.onDelete = this.onDelete.bind(this);
@@ -53,7 +53,7 @@ export default class Homepage extends React.Component {
               })
             }
           >
-            Non Arsip
+            Catatan Aktif
           </button>
         </section>
         <section className="tab-container">
@@ -68,7 +68,7 @@ export default class Homepage extends React.Component {
               ))
             : this.state.archived
             ? "Arsip Kosong"
-            : "Catatan Kosong"}
+            : "Catatan Aktif Kosong"}
         </section>
       </main>
     );

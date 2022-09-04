@@ -2,7 +2,7 @@ import * as React from "react";
 import { useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 import NoteCard from "../components/note-card";
-import { getNoteById } from "../utils/notes";
+import { getNoteById } from "../utils/index";
 import PageNotFound from "./_404";
 
 export default function DetailPageWrapper() {
